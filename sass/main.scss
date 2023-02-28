@@ -4,9 +4,19 @@ body {
   background: $background-color;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: $text-color;
+}
+
+* {
+  transition: background 0.2s ease-in-out, color 0.3s ease-in-out;
+}
+
+.light-mode {
+  color: $text-color--dark;
+  cursor: pointer;
 }
 
 .fa {

@@ -14,6 +14,7 @@ const dropdownChoicesContainerEl = document.querySelector(
 const dropdownChoices = document.querySelectorAll(
   ".color-generator__dropdown--choice"
 );
+const lightModeSwitchEl = document.querySelector(".light-mode");
 
 // initial code
 let color = new Color(data);
@@ -22,6 +23,15 @@ let color = new Color(data);
 formEl.addEventListener("submit", (e) => {
   e.preventDefault();
   generateColors();
+});
+
+lightModeSwitchEl.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  if (document.body.classList.contains("dark-mode")) {
+    lightModeSwitchEl.innerHTML = "day mode";
+  } else {
+    lightModeSwitchEl.innerHTML = "night mode";
+  }
 });
 
 dropdownBtnEl.addEventListener("click", () => {
