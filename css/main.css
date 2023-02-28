@@ -105,6 +105,7 @@ body {
   align-items: center;
   align-items: center;
   z-index: 2;
+  border-radius: 0.5rem 0.5rem 0 0;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 .color-generator__color-picker {
@@ -196,6 +197,7 @@ body {
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
   text-align: center;
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 .color-generator__color-hex {
   cursor: pointer;
