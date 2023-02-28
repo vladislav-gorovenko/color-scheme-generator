@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/17c3e094c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Color Scheme Generator</title>
+  </head>
+  <body class="dark-mode">
+    <main class="color-generator">
+      <form class="color-generator__head">
+        <input
+          type="color"
+          name="color-picker"
+          id="color-picker"
+          class="color-generator__color-picker"
+          value="#F55A5A"
+        />
+        <div class="color-generator__dropdown">
+          <div class="color-generator__dropdown--btn">
+            <p>Monochrome</p>
+            <i class="fa-solid fa-angle-down fa"></i>
+          </div>
+          <div class="color-generator__dropdown--choices">
+            <p
+              mode="monochrome"
+              class="color-generator__dropdown--choice selected"
+            >
+              Monochrome
+              <i class="fa-solid fa-check fa"></i>
+            </p>
+            <p mode="monochrome-dark" class="color-generator__dropdown--choice">
+              Monochrome-dark
+              <i class="fa-solid fa-check fa"></i>
+            </p>
+            <p
+              mode="monochrome-light"
+              class="color-generator__dropdown--choice"
+            >
+              Monochrome-light
+              <i class="fa-solid fa-check fa"></i>
+            </p>
+            <p mode="analogic" class="color-generator__dropdown--choice">
+              Analogic
+              <i class="fa-solid fa-check fa"></i>
+            </p>
+            <p mode="complement" class="color-generator__dropdown--choice">
+              Complement
+              <i class="fa-solid fa-check fa"></i>
+            </p>
+            <p
+              mode="analogic-complement"
+              class="color-generator__dropdown--choice"
+            >
+              Analogic-complement
+              <i class="fa-solid fa-check fa"></i>
+            </p>
+            <p mode="triad" class="color-generator__dropdown--choice">
+              Triad
+              <i class="fa-solid fa-check fa"></i>
+            </p>
+          </div>
+        </div>
+        <button class="color-generator__get-scheme">Get color scheme</button>
+      </form>
+      <div class="color-generator__colors">
+        <div
+          color="f55a5a"
+          class="color-generator__color"
+          style="background: #f55a5a"
+        ></div>
+        <div
+          color="2b283a"
+          class="color-generator__color"
+          style="background: #2b283a"
+        ></div>
+        <div
+          color="fbf3ab"
+          class="color-generator__color"
+          style="background: #fbf3ab"
+        ></div>
+        <div
+          color="aad1b6"
+          class="color-generator__color"
+          style="background: #aad1b6"
+        ></div>
+        <div
+          color="a626d3"
+          class="color-generator__color"
+          style="background: #a626d3"
+        ></div>
+      </div>
+      <div class="color-generator__footer">
+        <div class="color-generator__color-hex">#F55A5A</div>
+        <div class="color-generator__color-hex">#2B283A</div>
+        <div class="color-generator__color-hex">#FBF3AB</div>
+        <div class="color-generator__color-hex">#AAD1B6</div>
+        <div class="color-generator__color-hex">#A626D3</div>
+      </div>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

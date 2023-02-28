@@ -1,0 +1,48 @@
+body.dark-mode {
+  .fa {
+    color: $white-color;
+  }
+
+  .fa-check {
+    color: $purple-color--dark;
+  }
+
+  .color-generator {
+    &__head {
+      background: $blue-color--dark;
+    }
+
+    &__dropdown {
+      &--btn {
+        color: $text-color--dark;
+      }
+
+      &--choices {
+        background: $blue-color--dark;
+        border: 0.1px solid $blue-color--dark;
+      }
+
+      &--choice {
+        color: $white-color;
+      }
+    }
+
+    &__get-scheme {
+      background: $gray-color--dark;
+      border: 1px solid $gray-color--dark;
+      color: $white-color;
+    }
+
+    &__footer {
+      background: $blue-color--dark;
+      color: $white-color;
+    }
+
+    &__color-hex {
+      cursor: pointer;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+}
