@@ -54,7 +54,6 @@ body {
   background: #1c1c1c;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #374151;
@@ -65,8 +64,17 @@ body {
 }
 
 .light-mode {
+  position: absolute;
+  top: 100px;
+  z-index: 200;
   color: #d5d4d8;
   cursor: pointer;
+  transition: all 0.1s ease-in;
+  padding: 0.3rem;
+}
+.light-mode:hover {
+  transform: scale(1.1);
+  background: green;
 }
 
 .fa {
@@ -78,9 +86,9 @@ body {
 }
 
 .color-generator {
-  margin: 2rem;
   height: 550px;
   width: 550px;
+  margin: 2rem;
   border-radius: 0.5rem;
   overflow: hidden;
   display: grid;

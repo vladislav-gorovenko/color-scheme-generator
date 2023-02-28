@@ -4,7 +4,6 @@ body {
   background: $background-color;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: $text-color;
@@ -15,8 +14,18 @@ body {
 }
 
 .light-mode {
+  position: absolute;
+  top: 100px;
+  z-index: 200;
   color: $text-color--dark;
   cursor: pointer;
+  transition: all 0.1s ease-in;
+  padding: 0.3rem;
+
+  &:hover {
+    transform: scale(1.1);
+    background: green;
+  }
 }
 
 .fa {
@@ -28,9 +37,9 @@ body {
 }
 
 .color-generator {
-  margin: 2rem;
   height: 550px;
   width: 550px;
+  margin: 2rem;
 
   border-radius: 0.5rem;
   overflow: hidden;
